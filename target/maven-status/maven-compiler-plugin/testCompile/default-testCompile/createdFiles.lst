@@ -1,0 +1,5 @@
+com/societegenerale/requestmanagement/service/RequestServiceTest.class
+com/societegenerale/requestmanagement/domain/RequestTest.class
+com/societegenerale/requestmanagement/domain/RequestStateTest.class
+com/societegenerale/requestmanagement/controller/RequestControllerIntegrationTest.class
+com/societegenerale/requestmanagement/RequestmanagementApplicationTests.class

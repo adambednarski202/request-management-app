@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="21.517" tests="17" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/abedn/development/projects/request-management-app-sgcib-2/target/test-classes:/home/abedn/development/projects/request-management-app-sgcib-2/target/classes:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-h2console/4.1.1/spring-boot-h2console-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot/4.1.1/spring-boot-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-context/7.0.9/spring-context-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/spring-aop/7.0.9/spring-aop-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/spring-beans/7.0.9/spring-beans-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/spring-expression/7.0.9/spring-expression-7.0.9.jar:/home/abedn/.m2/repository/io/micrometer/micrometer-observation/1.17.1/micrometer-observation-1.17.1.jar:/home/abedn/.m2/repository/io/micrometer/micrometer-commons/1.17.1/micrometer-commons-1.17.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.1.1/spring-boot-starter-webmvc-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.1/spring-boot-starter-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.1/spring-boot-starter-logging-4.1.1.jar:/home/abedn/.m2/repository/ch/qos/logback/logback-classic/1.5.38/logback-classic-1.5.38.jar:/home/abedn/.m2/repository/ch/qos/logback/logback-core/1.5.38/logback-core-1.5.38.jar:/home/abedn/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.5/log4j-to-slf4j-2.25.5.jar:/home/abedn/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.5/log4j-api-2.25.5.jar:/home/abedn/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.1/spring-boot-autoconfigure-4.1.1.jar:/home/abedn/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/home/abedn/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.1.1/spring-boot-starter-jackson-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.1/spring-boot-jackson-4.1.1.jar:/home/abedn/.m2/repository/tools/jackson/core/jackson-databind/3.1.5/jackson-databind-3.1.5.jar:/home/abedn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/home/abedn/.m2/repository/tools/jackson/core/jackson-core/3.1.5/jackson-core-3.1.5.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.1.1/spring-boot-starter-tomcat-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.1.1/spring-boot-starter-tomcat-runtime-4.1.1.jar:/home/abedn/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.24/tomcat-embed-core-11.0.24.jar:/home/abedn/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.24/tomcat-embed-websocket-11.0.24.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.1/spring-boot-tomcat-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.1/spring-boot-http-converter-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-web/7.0.9/spring-web-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.1/spring-boot-webmvc-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.1/spring-boot-servlet-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-webmvc/7.0.9/spring-webmvc-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/4.1.1/spring-boot-starter-data-jpa-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.1/spring-boot-starter-jdbc-4.1.1.jar:/home/abedn/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.1/spring-boot-data-jpa-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.1/spring-boot-data-commons-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.1/spring-boot-persistence-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/data/spring-data-commons/4.1.1/spring-data-commons-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.1/spring-boot-hibernate-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.1/spring-boot-jpa-4.1.1.jar:/home/abedn/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar:/home/abedn/.m2/repository/org/hibernate/orm/hibernate-core/7.4.5.Final/hibernate-core-7.4.5.Final.jar:/home/abedn/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/abedn/.m2/repository/org/hibernate/models/hibernate-models/1.1.1/hibernate-models-1.1.1.jar:/home/abedn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.9/jaxb-runtime-4.0.9.jar:/home/abedn/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.9/jaxb-core-4.0.9.jar:/home/abedn/.m2/repository/org/eclipse/angus/angus-activation/2.0.3/angus-activation-2.0.3.jar:/home/abedn/.m2/repository/org/glassfish/jaxb/txw2/4.0.9/txw2-4.0.9.jar:/home/abedn/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/abedn/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/abedn/.m2/repository/org/springframework/spring-orm/7.0.9/spring-orm-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/data/spring-data-jpa/4.1.1/spring-data-jpa-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-tx/7.0.9/spring-tx-7.0.9.jar:/home/abedn/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar:/home/abedn/.m2/repository/org/springframework/spring-aspects/7.0.9/spring-aspects-7.0.9.jar:/home/abedn/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.1/spring-boot-jdbc-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.1/spring-boot-sql-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.1/spring-boot-transaction-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-jdbc/7.0.9/spring-jdbc-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-validation/4.1.1/spring-boot-starter-validation-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-validation/4.1.1/spring-boot-validation-4.1.1.jar:/home/abedn/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.24/tomcat-embed-el-11.0.24.jar:/home/abedn/.m2/repository/org/hibernate/validator/hibernate-validator/9.1.3.Final/hibernate-validator-9.1.3.Final.jar:/home/abedn/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar:/home/abedn/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar:/home/abedn/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar:/home/abedn/.m2/repository/com/h2database/h2/2.4.240/h2-2.4.240.jar:/home/abedn/.m2/repository/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-test/4.1.1/spring-boot-starter-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-test/4.1.1/spring-boot-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/4.1.1/spring-boot-test-autoconfigure-4.1.1.jar:/home/abedn/.m2/repository/com/jayway/jsonpath/json-path/2.10.0/json-path-2.10.0.jar:/home/abedn/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar:/home/abedn/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar:/home/abedn/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/home/abedn/.m2/repository/net/minidev/json-smart/2.6.0/json-smart-2.6.0.jar:/home/abedn/.m2/repository/net/minidev/accessors-smart/2.6.0/accessors-smart-2.6.0.jar:/home/abedn/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/home/abedn/.m2/repository/org/assertj/assertj-core/3.27.7/assertj-core-3.27.7.jar:/home/abedn/.m2/repository/net/bytebuddy/byte-buddy/1.18.11/byte-buddy-1.18.11.jar:/home/abedn/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/home/abedn/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/home/abedn/.m2/repository/org/junit/jupiter/junit-jupiter/6.0.3/junit-jupiter-6.0.3.jar:/home/abedn/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.0.3/junit-jupiter-api-6.0.3.jar:/home/abedn/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/abedn/.m2/repository/org/junit/platform/junit-platform-commons/6.0.3/junit-platform-commons-6.0.3.jar:/home/abedn/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/abedn/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.0.3/junit-jupiter-params-6.0.3.jar:/home/abedn/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.0.3/junit-jupiter-engine-6.0.3.jar:/home/abedn/.m2/repository/org/junit/platform/junit-platform-engine/6.0.3/junit-platform-engine-6.0.3.jar:/home/abedn/.m2/repository/org/mockito/mockito-core/5.23.0/mockito-core-5.23.0.jar:/home/abedn/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.11/byte-buddy-agent-1.18.11.jar:/home/abedn/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/abedn/.m2/repository/org/mockito/mockito-junit-jupiter/5.23.0/mockito-junit-jupiter-5.23.0.jar:/home/abedn/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/home/abedn/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/abedn/.m2/repository/org/springframework/spring-core/7.0.9/spring-core-7.0.9.jar:/home/abedn/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar:/home/abedn/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar:/home/abedn/.m2/repository/org/springframework/spring-test/7.0.9/spring-test-7.0.9.jar:/home/abedn/.m2/repository/org/xmlunit/xmlunit-core/2.11.0/xmlunit-core-2.11.0.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc-test/4.1.1/spring-boot-starter-webmvc-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-jackson-test/4.1.1/spring-boot-starter-jackson-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-webmvc-test/4.1.1/spring-boot-webmvc-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.1/spring-boot-web-server-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-resttestclient/4.1.1/spring-boot-resttestclient-4.1.1.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="APPLICATION_NAME" value="requestmanagement"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/abedn/development/projects/request-management-app-sgcib-2/target/surefire/surefirebooter-20261011212026699_3.jar /home/abedn/development/projects/request-management-app-sgcib-2/target/surefire 2026-10-11T21-20-25_331-jvmRun1 surefire-20261011212026699_1tmp surefire_0-20261011212026699_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/abedn/development/projects/request-management-app-sgcib-2/target/test-classes:/home/abedn/development/projects/request-management-app-sgcib-2/target/classes:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-h2console/4.1.1/spring-boot-h2console-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot/4.1.1/spring-boot-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-context/7.0.9/spring-context-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/spring-aop/7.0.9/spring-aop-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/spring-beans/7.0.9/spring-beans-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/spring-expression/7.0.9/spring-expression-7.0.9.jar:/home/abedn/.m2/repository/io/micrometer/micrometer-observation/1.17.1/micrometer-observation-1.17.1.jar:/home/abedn/.m2/repository/io/micrometer/micrometer-commons/1.17.1/micrometer-commons-1.17.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.1.1/spring-boot-starter-webmvc-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.1/spring-boot-starter-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.1/spring-boot-starter-logging-4.1.1.jar:/home/abedn/.m2/repository/ch/qos/logback/logback-classic/1.5.38/logback-classic-1.5.38.jar:/home/abedn/.m2/repository/ch/qos/logback/logback-core/1.5.38/logback-core-1.5.38.jar:/home/abedn/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.5/log4j-to-slf4j-2.25.5.jar:/home/abedn/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.5/log4j-api-2.25.5.jar:/home/abedn/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.1/spring-boot-autoconfigure-4.1.1.jar:/home/abedn/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/home/abedn/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.1.1/spring-boot-starter-jackson-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.1/spring-boot-jackson-4.1.1.jar:/home/abedn/.m2/repository/tools/jackson/core/jackson-databind/3.1.5/jackson-databind-3.1.5.jar:/home/abedn/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/home/abedn/.m2/repository/tools/jackson/core/jackson-core/3.1.5/jackson-core-3.1.5.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.1.1/spring-boot-starter-tomcat-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.1.1/spring-boot-starter-tomcat-runtime-4.1.1.jar:/home/abedn/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.24/tomcat-embed-core-11.0.24.jar:/home/abedn/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.24/tomcat-embed-websocket-11.0.24.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.1/spring-boot-tomcat-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.1/spring-boot-http-converter-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-web/7.0.9/spring-web-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.1/spring-boot-webmvc-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.1/spring-boot-servlet-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-webmvc/7.0.9/spring-webmvc-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/4.1.1/spring-boot-starter-data-jpa-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.1/spring-boot-starter-jdbc-4.1.1.jar:/home/abedn/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.1/spring-boot-data-jpa-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.1/spring-boot-data-commons-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.1/spring-boot-persistence-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/data/spring-data-commons/4.1.1/spring-data-commons-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.1/spring-boot-hibernate-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.1/spring-boot-jpa-4.1.1.jar:/home/abedn/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar:/home/abedn/.m2/repository/org/hibernate/orm/hibernate-core/7.4.5.Final/hibernate-core-7.4.5.Final.jar:/home/abedn/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/abedn/.m2/repository/org/hibernate/models/hibernate-models/1.1.1/hibernate-models-1.1.1.jar:/home/abedn/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.9/jaxb-runtime-4.0.9.jar:/home/abedn/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.9/jaxb-core-4.0.9.jar:/home/abedn/.m2/repository/org/eclipse/angus/angus-activation/2.0.3/angus-activation-2.0.3.jar:/home/abedn/.m2/repository/org/glassfish/jaxb/txw2/4.0.9/txw2-4.0.9.jar:/home/abedn/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/abedn/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/abedn/.m2/repository/org/springframework/spring-orm/7.0.9/spring-orm-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/data/spring-data-jpa/4.1.1/spring-data-jpa-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-tx/7.0.9/spring-tx-7.0.9.jar:/home/abedn/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar:/home/abedn/.m2/repository/org/springframework/spring-aspects/7.0.9/spring-aspects-7.0.9.jar:/home/abedn/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.1/spring-boot-jdbc-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.1/spring-boot-sql-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.1/spring-boot-transaction-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/spring-jdbc/7.0.9/spring-jdbc-7.0.9.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-validation/4.1.1/spring-boot-starter-validation-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-validation/4.1.1/spring-boot-validation-4.1.1.jar:/home/abedn/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.24/tomcat-embed-el-11.0.24.jar:/home/abedn/.m2/repository/org/hibernate/validator/hibernate-validator/9.1.3.Final/hibernate-validator-9.1.3.Final.jar:/home/abedn/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar:/home/abedn/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar:/home/abedn/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar:/home/abedn/.m2/repository/com/h2database/h2/2.4.240/h2-2.4.240.jar:/home/abedn/.m2/repository/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-test/4.1.1/spring-boot-starter-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-test/4.1.1/spring-boot-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/4.1.1/spring-boot-test-autoconfigure-4.1.1.jar:/home/abedn/.m2/repository/com/jayway/jsonpath/json-path/2.10.0/json-path-2.10.0.jar:/home/abedn/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar:/home/abedn/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar:/home/abedn/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/home/abedn/.m2/repository/net/minidev/json-smart/2.6.0/json-smart-2.6.0.jar:/home/abedn/.m2/repository/net/minidev/accessors-smart/2.6.0/accessors-smart-2.6.0.jar:/home/abedn/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/home/abedn/.m2/repository/org/assertj/assertj-core/3.27.7/assertj-core-3.27.7.jar:/home/abedn/.m2/repository/net/bytebuddy/byte-buddy/1.18.11/byte-buddy-1.18.11.jar:/home/abedn/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/home/abedn/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/home/abedn/.m2/repository/org/junit/jupiter/junit-jupiter/6.0.3/junit-jupiter-6.0.3.jar:/home/abedn/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.0.3/junit-jupiter-api-6.0.3.jar:/home/abedn/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/abedn/.m2/repository/org/junit/platform/junit-platform-commons/6.0.3/junit-platform-commons-6.0.3.jar:/home/abedn/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/abedn/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.0.3/junit-jupiter-params-6.0.3.jar:/home/abedn/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.0.3/junit-jupiter-engine-6.0.3.jar:/home/abedn/.m2/repository/org/junit/platform/junit-platform-engine/6.0.3/junit-platform-engine-6.0.3.jar:/home/abedn/.m2/repository/org/mockito/mockito-core/5.23.0/mockito-core-5.23.0.jar:/home/abedn/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.11/byte-buddy-agent-1.18.11.jar:/home/abedn/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/abedn/.m2/repository/org/mockito/mockito-junit-jupiter/5.23.0/mockito-junit-jupiter-5.23.0.jar:/home/abedn/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/home/abedn/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/abedn/.m2/repository/org/springframework/spring-core/7.0.9/spring-core-7.0.9.jar:/home/abedn/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar:/home/abedn/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar:/home/abedn/.m2/repository/org/springframework/spring-test/7.0.9/spring-test-7.0.9.jar:/home/abedn/.m2/repository/org/xmlunit/xmlunit-core/2.11.0/xmlunit-core-2.11.0.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc-test/4.1.1/spring-boot-starter-webmvc-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-starter-jackson-test/4.1.1/spring-boot-starter-jackson-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-webmvc-test/4.1.1/spring-boot-webmvc-test-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.1/spring-boot-web-server-4.1.1.jar:/home/abedn/.m2/repository/org/springframework/boot/spring-boot-resttestclient/4.1.1/spring-boot-resttestclient-4.1.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/abedn"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/abedn/development/projects/request-management-app-sgcib-2"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/abedn/development/projects/request-management-app-sgcib-2/target/surefire/surefirebooter-20261011212026699_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.12.1+1-1-26.04.4-Ubuntu"/>
+    <property name="user.name" value="abedn"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.18.40.1-microsoft-standard-WSL2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/abedn/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.12.1"/>
+    <property name="user.dir" value="/home/abedn/development/projects/request-management-app-sgcib-2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="12876"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.12.1+1-1-26.04.4-Ubuntu"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[requestmanagement] "/>
+  </properties>
+  <testcase name="shouldRejectVerifiedRequestWithReason" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="2.737">
+    <system-out><![CDATA[21:20:30.416 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest]: RequestControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:20:30.771 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.societegenerale.requestmanagement.RequestmanagementApplication for test class com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest
+21:20:31.009 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest]: RequestControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:20:31.037 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.societegenerale.requestmanagement.RequestmanagementApplication for test class com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-11T21:20:32.245+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.c.RequestControllerIntegrationTest : Starting RequestControllerIntegrationTest using Java 21.0.12.1 with PID 12876 (started by abedn in /home/abedn/development/projects/request-management-app-sgcib-2)
+2026-10-11T21:20:32.285+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.c.RequestControllerIntegrationTest : The following 1 profile is active: "local"
+2026-10-11T21:20:34.589+02:00  INFO 12876 --- [requestmanagement] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11T21:20:34.746+02:00  INFO 12876 --- [requestmanagement] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 2 JPA repository interfaces.
+2026-10-11T21:20:36.044+02:00  INFO 12876 --- [requestmanagement] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-11T21:20:36.198+02:00  INFO 12876 --- [requestmanagement] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-11T21:20:38.029+02:00  INFO 12876 --- [requestmanagement] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-11T21:20:38.132+02:00  INFO 12876 --- [requestmanagement] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-11T21:20:38.701+02:00  INFO 12876 --- [requestmanagement] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:requestdb user=SA
+2026-10-11T21:20:38.709+02:00  INFO 12876 --- [requestmanagement] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-11T21:20:38.950+02:00  INFO 12876 --- [requestmanagement] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:requestdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: REQUESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-11T21:20:41.593+02:00  INFO 12876 --- [requestmanagement] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    create table audit_logs (
+        id bigint generated by default as identity,
+        new_state enum ('ACCEPTED','CREATED','DELETED','PUBLISHED','REJECTED','VERIFIED') not null,
+        old_state enum ('ACCEPTED','CREATED','DELETED','PUBLISHED','REJECTED','VERIFIED'),
+        publication_id bigint,
+        reason varchar(255),
+        request_id bigint not null,
+        timestamp timestamp(6) with time zone not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table requests (
+        id bigint generated by default as identity,
+        body TEXT not null,
+        created_at timestamp(6) with time zone not null,
+        name varchar(255) not null,
+        publication_id bigint,
+        reason varchar(255),
+        state enum ('ACCEPTED','CREATED','DELETED','PUBLISHED','REJECTED','VERIFIED') not null,
+        updated_at timestamp(6) with time zone not null,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists requests 
+       drop constraint if exists UK3kkoevcdx16rpqg6rllbilgwa
+Hibernate: 
+    alter table if exists requests 
+       add constraint UK3kkoevcdx16rpqg6rllbilgwa unique (publication_id)
+2026-10-11T21:20:41.816+02:00  INFO 12876 --- [requestmanagement] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-11T21:20:42.079+02:00  INFO 12876 --- [requestmanagement] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-11T21:20:46.604+02:00  INFO 12876 --- [requestmanagement] [           main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:requestdb'
+2026-10-11T21:20:46.835+02:00  INFO 12876 --- [requestmanagement] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-11T21:20:46.835+02:00  INFO 12876 --- [requestmanagement] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-11T21:20:46.844+02:00  INFO 12876 --- [requestmanagement] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2026-10-11T21:20:46.939+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.c.RequestControllerIntegrationTest : Started RequestControllerIntegrationTest in 15.719 seconds (process running for 19.824)
+Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:48.822+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 1 to REJECTED with reason: Budget constraint
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+2026-10-11T21:20:48.872+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.AuditLogService            : Recording audit log for requestId: 1, transition: VERIFIED -> REJECTED, reason: Budget constraint, publicationId: null
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (new_state, old_state, publication_id, reason, request_id, timestamp, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:48.897+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Request with id: 1 successfully transitioned to state: REJECTED
+Hibernate: 
+    update
+        requests 
+    set
+        body=?,
+        name=?,
+        publication_id=?,
+        reason=?,
+        state=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0 
+    where
+        ale1_0.request_id=? 
+    order by
+        ale1_0.timestamp
+]]></system-out>
+    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/home/abedn/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.11/byte-buddy-agent-1.18.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="shouldReturnBadRequestWhenBodyIsBlank" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.298">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    delete 
+    from
+        audit_logs 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        requests r1_0
+]]></system-out>
+  </testcase>
+  <testcase name="shouldPublishAcceptedRequest" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.11">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.107+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 2 to PUBLISHED
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+2026-10-11T21:20:50.120+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.AuditLogService            : Recording audit log for requestId: 2, transition: ACCEPTED -> PUBLISHED, reason: null, publicationId: 2
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (new_state, old_state, publication_id, reason, request_id, timestamp, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.125+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Request with id: 2 successfully transitioned to state: PUBLISHED, publicationId: 2
+Hibernate: 
+    update
+        requests 
+    set
+        body=?,
+        name=?,
+        publication_id=?,
+        reason=?,
+        state=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0 
+    where
+        ale1_0.request_id=? 
+    order by
+        ale1_0.timestamp
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCreateRequestAndPersistInDatabase" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.061">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    delete 
+    from
+        audit_logs 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+2026-10-11T21:20:50.219+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Creating request with name: Software License
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.222+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.AuditLogService            : Recording audit log for requestId: 3, transition: null -> CREATED, reason: null, publicationId: null
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (new_state, old_state, publication_id, reason, request_id, timestamp, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.225+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Request created successfully with id: 3
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn404WhenVerifyingNonExistentRequest" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.045">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    delete 
+    from
+        audit_logs 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+2026-10-11T21:20:50.289+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 999999 to VERIFIED
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="shouldBrowseRequestsWithPaginationAndFiltering" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.255">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.429+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Browsing requests with name: Alpha, state: null, pageable: Page request [number: 0, size 10, sort: UNSORTED]
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        lower(r1_0.name) like ? escape '' 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-10-11T21:20:50.509+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Browsing requests with name: null, state: VERIFIED, pageable: Page request [number: 0, size 10, sort: UNSORTED]
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.state=? 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-10-11T21:20:50.525+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Browsing requests with name: Alpha, state: VERIFIED, pageable: Page request [number: 0, size 10, sort: UNSORTED]
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        lower(r1_0.name) like ? escape '' 
+        and r1_0.state=? 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-10-11T21:20:50.541+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Browsing requests with name: null, state: null, pageable: Page request [number: 0, size 10, sort: UNSORTED]
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        1=1 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetRequestById" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.041">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.606+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Fetching request with id: 7
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn409WhenRequestAlreadyVerified" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.083">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.688+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 8 to VERIFIED
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn404WhenGetRequestNotFound" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.051">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+2026-10-11T21:20:50.784+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Fetching request with id: 999999
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="shouldFailToRejectWithoutReason" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.054">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.838+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 9 to REJECTED with reason: null
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="shouldAcceptVerifiedRequest" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.056">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.887+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 10 to ACCEPTED
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+2026-10-11T21:20:50.893+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.AuditLogService            : Recording audit log for requestId: 10, transition: VERIFIED -> ACCEPTED, reason: null, publicationId: null
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (new_state, old_state, publication_id, reason, request_id, timestamp, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.896+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Request with id: 10 successfully transitioned to state: ACCEPTED
+Hibernate: 
+    update
+        requests 
+    set
+        body=?,
+        name=?,
+        publication_id=?,
+        reason=?,
+        state=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0 
+    where
+        ale1_0.request_id=? 
+    order by
+        ale1_0.timestamp
+]]></system-out>
+  </testcase>
+  <testcase name="shouldFailToDeleteWithoutReason" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.079">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    delete 
+    from
+        audit_logs 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:50.986+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 11 to DELETED with reason: 
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="shouldDeleteRequestWithReason" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.064">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:51.040+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 12 to DELETED with reason: Project cancelled
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+2026-10-11T21:20:51.046+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.AuditLogService            : Recording audit log for requestId: 12, transition: CREATED -> DELETED, reason: Project cancelled, publicationId: null
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (new_state, old_state, publication_id, reason, request_id, timestamp, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:51.051+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Request with id: 12 successfully transitioned to state: DELETED
+Hibernate: 
+    update
+        requests 
+    set
+        body=?,
+        name=?,
+        publication_id=?,
+        reason=?,
+        state=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0 
+    where
+        ale1_0.request_id=? 
+    order by
+        ale1_0.timestamp
+]]></system-out>
+  </testcase>
+  <testcase name="shouldVerifyRequestViaPut" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.049">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    delete 
+    from
+        audit_logs 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:51.107+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 13 to VERIFIED
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+2026-10-11T21:20:51.109+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.AuditLogService            : Recording audit log for requestId: 13, transition: CREATED -> VERIFIED, reason: null, publicationId: null
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (new_state, old_state, publication_id, reason, request_id, timestamp, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:51.110+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Request with id: 13 successfully transitioned to state: VERIFIED
+Hibernate: 
+    update
+        requests 
+    set
+        body=?,
+        name=?,
+        publication_id=?,
+        reason=?,
+        state=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnBadRequestWhenNameIsBlank" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.043">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    delete 
+    from
+        audit_logs 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        requests r1_0
+]]></system-out>
+  </testcase>
+  <testcase name="shouldVerifyRequestInCreatedState" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.063">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:51.211+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 14 to VERIFIED
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+2026-10-11T21:20:51.218+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.AuditLogService            : Recording audit log for requestId: 14, transition: CREATED -> VERIFIED, reason: null, publicationId: null
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (new_state, old_state, publication_id, reason, request_id, timestamp, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:51.227+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Request with id: 14 successfully transitioned to state: VERIFIED
+Hibernate: 
+    update
+        requests 
+    set
+        body=?,
+        name=?,
+        publication_id=?,
+        reason=?,
+        state=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn409WhenRequestIsDeleted" classname="com.societegenerale.requestmanagement.controller.RequestControllerIntegrationTest" time="0.063">
+    <system-out><![CDATA[Hibernate: 
+    select
+        ale1_0.id,
+        ale1_0.new_state,
+        ale1_0.old_state,
+        ale1_0.publication_id,
+        ale1_0.reason,
+        ale1_0.request_id,
+        ale1_0.timestamp 
+    from
+        audit_logs ale1_0
+Hibernate: 
+    delete 
+    from
+        audit_logs 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0
+Hibernate: 
+    delete 
+    from
+        requests 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        requests
+        (body, created_at, name, publication_id, reason, state, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+2026-10-11T21:20:51.306+02:00  INFO 12876 --- [requestmanagement] [           main] c.s.r.service.RequestService             : Transitioning request with id: 15 to VERIFIED
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.body,
+        r1_0.created_at,
+        r1_0.name,
+        r1_0.publication_id,
+        r1_0.reason,
+        r1_0.state,
+        r1_0.updated_at 
+    from
+        requests r1_0 
+    where
+        r1_0.id=?
+]]></system-out>
+  </testcase>
+</testsuite>
